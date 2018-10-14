@@ -37,8 +37,8 @@ public class Quadratic {
 		vertexY = ((a)*(vertexX*vertexX) + (b)*(vertexX) + c);
 			
 		//find the x-intercept(s) 
-		x_subtract = ((Math.sqrt(b*b) - 4*(a)*(c) ) / (2*a));
-		x_addition = ((Math.sqrt(b*b) + 4*(a)*(c) ) / (2*a));
+		x_subtract =(((-b) - (Math.sqrt((b*b)-(4*a*c))))/(2*a));
+		x_addition =(((-b) + (Math.sqrt((b*b)-(4*a*c))))/(2*a));
 		if (x_subtract == x_addition) {
 			xintercepts =("" + x_subtract);
 		}
@@ -48,9 +48,10 @@ public class Quadratic {
 		
 		//finding the y-intercept
 		yIntercept = c;
+		
 		String description = ("===================================================================================================" + "\n"
 				 + "Description of the graph of: \n"
-				 + "y = " + a + "x^2 + " + b + "x + " + c +"\n\n"
+				 + "y = (" + a + ")x^2 + (" + b + ")x + (" + c +") \n\n"
 				 + "Opens: " + opens + "\n"
 				 + "Axis of Symmetry: " + symmetry + "\n"
 				 + "Vertex: (" + vertexX + "," + vertexY + ")" + "\n"
@@ -58,5 +59,5 @@ public class Quadratic {
 				 + "y-intercept: " + yIntercept+ "\n"
 				 + "===================================================================================================");
 	return (description);
-}
+	}
 }
