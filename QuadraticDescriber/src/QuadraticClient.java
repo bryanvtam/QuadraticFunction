@@ -17,5 +17,6 @@ public class QuadraticClient {
 				continues = true;
 			}
 		}
+		scanner.close();
 	}
 }
